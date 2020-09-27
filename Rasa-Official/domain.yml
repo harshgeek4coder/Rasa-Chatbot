@@ -1,0 +1,48 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - about_club
+  - contact_us
+  - help_me
+
+responses:
+  utter_greet:
+  - text: "Hey There!Welcome To Our IOML Community. How may i help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, Glad I could Help :)) !"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, developed by IOML Community. Here To Help You !\nYou Can also type 'help' to get started."
+    image: "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1129869424%2F960x0.jpg%3Ffit%3Dscale"
+
+  utter_about:
+  - text: "About Us:\nIOML Community is machine learning community and helps to  enhance developer's ability to understand nature and build a better future, it is crucial that we make it transparent and easily accessible to everyone in research, education and industry. The IOML Family is an inclusive movement to build an open, organized, online ecosystem for machine learning. We build open source tools to discover (and share) open data from any domain, easily draw them into your favourite machine learning environments, quickly build models alongside (and together with) thousands of other data scientists, analyse your results against the state of the art, and even get automatic advice on how to build better models. Stand on the shoulders of giants and make the world a better place."
+
+
+  utter_contact_us:
+  - text: "Contact Us:\nWe Would Love to hear from you , Feel Free To Contact Us :))\n[https://www.google.com/](https://www.google.com/)\nTel:+91-9457617539\n"
+
+  utter_help_me:
+  - text: "Always Happy To Help ! Please Type the following to Get Started :\n1.About\n2.Contact Us\n3.Help"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
